@@ -2,8 +2,8 @@
 function view($nomeStr,$data=null,$print=true){
   $arr=explode('/',$nomeStr);
   $nomeDoRepositorioStr=@$arr[0];
-  $nameDoPacoteStr=@$arr[1];
-  $str=ROOT.'call/callgnomo'.$nomeDoRepositorioStr;
+  $nomeDoPacoteStr=@$arr[1];
+  $str=ROOT.'call/callgnomo/'.$nomeDoRepositorioStr;
   $str.='/view/'.$nomeDoPacoteStr.'.php';
   if(file_exists($str)){
     if(is_array($data)){
