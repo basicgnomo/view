@@ -7,7 +7,8 @@ function view($nomeStr,$data=null,$print=true){
   if($nomeDoPacoteStr=='404'){
     header("HTTP/1.0 404 Not Found");
   }
-  $str=ROOT.'call/callgnomo/'.$nomeDoRepositorioStr;
+  //$str=ROOT.'call/callgnomo/'.$nomeDoRepositorioStr;
+  $str=ROOT.$nomeDoRepositorioStr;
   $str.='/view/'.$nomeDoPacoteStr.'.php';
   if(file_exists($str)){
     if(is_array($data)){
